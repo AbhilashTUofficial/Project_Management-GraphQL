@@ -54,7 +54,7 @@ function Projects() {
                 project={{ name: "...", id: "...", description: "..." }}
               />
             ) : (
-              data.projects.map((project) => <Project project={project} />)
+              data.projects.map((project,index) => <Project project={project} key={index} />)
             )}
           </tbody>
         </table>
